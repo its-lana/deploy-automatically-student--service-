@@ -12,14 +12,13 @@ import (
 	"student-service/internal/middleware"
 	"student-service/pkg/util"
 
-	"github.com/joho/godotenv"
 	"github.com/labstack/echo/v4"
 )
 
 func init() {
-	if err := godotenv.Load(); err != nil {
-		panic(err)
-	}
+	// if err := godotenv.Load(); err != nil {
+	// 	panic(err)
+	// }
 	database.GetConnection()
 }
 
